@@ -1,215 +1,184 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Julie Mori — Comédienne · Metteuse en scène · Autrice</title>
-  <meta name="description" content="Site officiel de Julie Mori — comédienne, metteuse en scène, autrice." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Site officiel de Julie Mori — comédienne, metteuse en scène, autrice, pédagogue, coach."/>
+
+  <!-- IMPORTANT: lien vers ton CSS -->
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-  <!-- Header -->
+
+  <!-- ======================
+        HEADER
+  ======================= -->
   <header class="jm-header">
-    <div class="jm-header__inner">
-      <a class="jm-brand" href="#top" aria-label="Retour en haut">
-        <span class="jm-brand__name">Julie Mori</span>
-        <span class="jm-brand__tag">Comédienne · Metteuse en scène · Autrice</span>
+    <div class="wrap">
+      <a class="jm-brand jm-homelink" href="#top" data-hash="#top" aria-label="Julie Mori — Accueil">
+        <strong class="jm-brandname">Julie Mori</strong>
       </a>
 
-      <nav class="jm-nav" aria-label="Navigation principale">
-        <a href="#comedienne">Comédienne</a>
-        <a href="#mise-en-scene">Mise en scène</a>
-        <a href="#actualites">Actualités</a>
-        <a class="jm-nav__cta" href="#contact">Contact</a>
+      <nav class="jm-nav" aria-label="Navigation">
+        <a class="jm-link" href="#presentation" data-mask="1">Présentation</a>
+        <a class="jm-link" href="#comedienne" data-mask="2">Comédienne</a>
+        <a class="jm-link" href="#mes">Mise en scène</a>
+        <a class="jm-link" href="#pedagogie">Formation & coaching</a>
+        <a class="jm-link" href="#contact">Contact</a>
       </nav>
+
+      <div class="jm-cta">
+        <a class="jm-pill jm-pill-cta" href="#contact"><em>Écrire / Book</em></a>
+        <button class="jm-burger" id="jmBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <i aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </header>
 
+  <!-- drawer mobile -->
+  <div class="jm-drawer" id="jmDrawer" aria-hidden="true">
+    <div class="inner">
+      <a href="#presentation">Présentation</a>
+      <a href="#comedienne">Comédienne</a>
+      <a href="#mes">Mise en scène</a>
+      <a href="#pedagogie">Formation & coaching</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
   <main id="top">
-    <!-- HERO / MANIFESTE -->
-    <section class="jm-hero">
-      <div class="jm-hero__bg" aria-hidden="true"></div>
 
-      <div class="jm-wrap">
-        <div class="jm-hero__grid">
-          <div class="jm-hero__left">
-            <p class="jm-kicker">Site officiel</p>
-            <h1 class="jm-title">
-              Théâtre vivant. <br/>
-              Voix, corps, poésie. <br/>
-              <span class="jm-title__soft">Une présence avant un résumé.</span>
-            </h1>
+    <!-- ======================
+          MANIFESTO
+    ======================= -->
+    <section id="jm-presentation">
+      <a id="presentation"></a>
 
-            <p class="jm-lead">
-              Julie Mori explore un théâtre à la fois populaire et radical, où le jeu rencontre
-              l’écriture, la musique et la mise en scène.
-            </p>
-
-            <div class="jm-hero__actions">
-              <a class="jm-btn" href="#comedienne">Voir le book</a>
-              <a class="jm-btn jm-btn--ghost" href="#actualites">Prochaines dates</a>
-            </div>
-          </div>
-
-          <div class="jm-hero__right">
-            <!-- Patchwork placeholders : remplace par tes images -->
-            <div class="jm-patchwork" aria-label="Patchwork visuel">
-              <a class="jm-tile jm-tile--a" href="#comedienne">
-                <span class="jm-tile__label">Book</span>
-              </a>
-              <a class="jm-tile jm-tile--b" href="#mise-en-scene">
-                <span class="jm-tile__label">Mise en scène</span>
-              </a>
-              <a class="jm-tile jm-tile--c" href="#actualites">
-                <span class="jm-tile__label">Actualités</span>
-              </a>
-              <a class="jm-tile jm-tile--d" href="#contact">
-                <span class="jm-tile__label">Contact</span>
-              </a>
-            </div>
-
-            <p class="jm-note">
-              Astuce : remplace chaque tuile par une image (portrait / scène / masque) pour un effet “galerie”.
-            </p>
-          </div>
+      <div class="jm-stage">
+        <div class="jm-title">
+          <span>JULIE</span>
+          <span>MORI</span>
         </div>
+
+        <!-- Masques (tu peux les garder comme ça, ou les mettre en local plus tard) -->
+        <img class="jm-mask one"
+             src="https://juliemori.fr/wp-content/uploads/2026/01/masque-1.png"
+             alt="Masque Commedia dell’Arte 1" loading="lazy"/>
+
+        <img class="jm-mask two"
+             src="https://juliemori.fr/wp-content/uploads/2026/01/masque-2.png"
+             alt="Masque Commedia dell’Arte 2" loading="lazy"/>
       </div>
-    </section>
 
-    <!-- COMÉDIENNE -->
-    <section id="comedienne" class="jm-section">
-      <div class="jm-wrap">
-        <div class="jm-section__head">
-          <p class="jm-kicker">Comédienne</p>
-          <h2 class="jm-h2">Book & scènes</h2>
-          <p class="jm-muted">Galeries sobres, impact visuel, aucune lourdeur.</p>
+      <!-- ===== ACTE II : AFFICHES (slider) ===== -->
+      <section class="jm-posters" aria-label="Affiches de spectacles">
+        <div class="jm-posters-head">
+          <p class="jm-posters-title">À l'affiche</p>
+          <p class="jm-posters-hint"></p>
         </div>
 
-        <div class="jm-gallery">
-          <!-- Remplace les blocs par tes <img src="..."> -->
-          <figure class="jm-shot jm-shot--p">
-            <div class="jm-shot__ph">Portrait 1</div>
-          </figure>
-          <figure class="jm-shot jm-shot--p">
-            <div class="jm-shot__ph">Portrait 2</div>
-          </figure>
-          <figure class="jm-shot jm-shot--p">
-            <div class="jm-shot__ph">Portrait 3</div>
-          </figure>
-          <figure class="jm-shot jm-shot--l">
-            <div class="jm-shot__ph">Paysage 1</div>
-          </figure>
-          <figure class="jm-shot jm-shot--l">
-            <div class="jm-shot__ph">Paysage 2</div>
-          </figure>
-        </div>
+        <div class="jm-rail" role="list" aria-label="Défilement automatique des affiches">
+          <div class="jm-track">
+            <!-- LISTE 1 -->
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_1" aria-label="Affiche — Abbaye Tour Premium">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.1.jpg" alt="Affiche — Abbaye Tour Premium" loading="lazy">
+              <div class="jm-caption"><span>Abbaye Tour Premium</span><i class="jm-badge"></i></div>
+            </a>
 
-        <div class="jm-divider"></div>
-      </div>
-    </section>
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_2" aria-label="Affiche — Le Naufrage">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.jpg" alt="Affiche — Le Naufrage" loading="lazy">
+              <div class="jm-caption"><span>Le Naufrage</span><i class="jm-badge mint"></i></div>
+            </a>
 
-    <!-- MISE EN SCÈNE -->
-    <section id="mise-en-scene" class="jm-section">
-      <div class="jm-wrap">
-        <div class="jm-section__head">
-          <p class="jm-kicker">Mise en scène</p>
-          <h2 class="jm-h2">Projets & créations</h2>
-          <p class="jm-muted">Une sélection de projets mis en scène par Julie.</p>
-        </div>
+            <!-- ... garde tes autres affiches ... -->
 
-        <div class="jm-cards">
-          <article class="jm-card">
-            <p class="jm-card__k">Création</p>
-            <h3 class="jm-card__t">Le Naufrage</h3>
-            <p class="jm-card__p">Redécouverte d’une œuvre rare d’Elena Baletti Riccoboni. Théâtre populaire, subversif et politique.</p>
-            <a class="jm-card__link" href="#">Découvrir →</a>
-          </article>
+            <!-- LISTE 2 DUPLICAT (pour boucle infinie) -->
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_1" aria-label="Affiche — Abbaye Tour Premium (bis)">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.1.jpg" alt="Affiche — Abbaye Tour Premium" loading="lazy">
+              <div class="jm-caption"><span>Abbaye Tour Premium</span><i class="jm-badge"></i></div>
+            </a>
 
-          <article class="jm-card">
-            <p class="jm-card__k">Création</p>
-            <h3 class="jm-card__t">Ni Dieu Ni Maître</h3>
-            <p class="jm-card__p">Un geste scénique incisif, entre collectif et intime, qui interroge les lignes d’autorité.</p>
-            <a class="jm-card__link" href="#">Découvrir →</a>
-          </article>
-
-          <article class="jm-card">
-            <p class="jm-card__k">Création</p>
-            <h3 class="jm-card__t">Les Reines du silence</h3>
-            <p class="jm-card__p">Un univers sensible et visuel, où la parole se fait matière et la présence, langage.</p>
-            <a class="jm-card__link" href="#">Découvrir →</a>
-          </article>
-
-          <article class="jm-card">
-            <p class="jm-card__k">Patrimoine</p>
-            <h3 class="jm-card__t">Abbaye de Graville</h3>
-            <p class="jm-card__p">Visites théâtralisées : faire vivre un lieu par le récit, l’écoute, et le jeu.</p>
-            <a class="jm-card__link" href="#">Découvrir →</a>
-          </article>
-        </div>
-
-        <div class="jm-divider"></div>
-      </div>
-    </section>
-
-    <!-- ACTUALITÉS -->
-    <section id="actualites" class="jm-section">
-      <div class="jm-wrap">
-        <div class="jm-section__head">
-          <p class="jm-kicker">Actualités</p>
-          <h2 class="jm-h2">Dates & annonces</h2>
-          <p class="jm-muted">Ajoute ici les prochains spectacles, liens BilletReduc, etc.</p>
-        </div>
-
-        <div class="jm-list">
-          <article class="jm-line">
-            <div class="jm-line__left">
-              <p class="jm-line__t">Prochaine date — Spectacle</p>
-              <p class="jm-line__m">Théâtre · Ville · Heure</p>
-            </div>
-            <a class="jm-line__a" href="#">Billetterie →</a>
-          </article>
-
-          <article class="jm-line">
-            <div class="jm-line__left">
-              <p class="jm-line__t">Annonce</p>
-              <p class="jm-line__m">Résidence / tournée / lecture publique…</p>
-            </div>
-            <a class="jm-line__a" href="#">En savoir plus →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="jm-section jm-section--contact">
-      <div class="jm-wrap jm-contact">
-        <div>
-          <p class="jm-kicker">Contact</p>
-          <h2 class="jm-h2">Travailler ensemble</h2>
-          <p class="jm-muted">Production, presse, collaborations, ateliers, coaching.</p>
-        </div>
-
-        <div class="jm-contact__box">
-          <p class="jm-contact__label">Email</p>
-          <a class="jm-contact__value" href="mailto:contact@juliemori.fr">contact@juliemori.fr</a>
-
-          <div class="jm-contact__row">
-            <a class="jm-btn jm-btn--small" href="#">Instagram</a>
-            <a class="jm-btn jm-btn--small jm-btn--ghost" href="#">BilletReduc</a>
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_2" aria-label="Affiche — Le Naufrage (bis)">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.jpg" alt="Affiche — Le Naufrage" loading="lazy">
+              <div class="jm-caption"><span>Le Naufrage</span><i class="jm-badge mint"></i></div>
+            </a>
           </div>
         </div>
+      </section>
+
+      <!-- ===== ACTE III : PRÉSENTATION ===== -->
+      <section class="jm-pres" aria-label="Présentation">
+        <div class="jm-pres-head">
+          <div class="jm-act">PRÉSENTATION</div>
+          <h2 class="jm-pres-title">Une trajectoire entre écriture, jeu et mise en scène.</h2>
+        </div>
+
+        <div class="jm-pres-grid">
+          <figure class="jm-pres-photo">
+            <img src="https://juliemori.fr/wp-content/uploads/2026/01/PHOTO-2026-01-25-09-51-04.jpg"
+                 alt="Julie Mori — portrait" loading="lazy">
+            <figcaption>Julie Mori</figcaption>
+          </figure>
+
+          <div class="jm-pres-cols">
+            <div class="jm-pres-col">
+              <p>Formée au Conservatoire d’art dramatique de Cannes, puis diplômée de l’Académie Internationale des Arts du Spectacle de Montreuil en 2011, mon parcours débute sur scène dans plusieurs comédies mises en scène par Carlo Boso.</p>
+              <p>Ma formation se poursuit à l’AICOM, où la rencontre avec Sofia Morgavi, qui devient ma coach vocale, m’ouvre la voie aux spectacles musicaux.</p>
+            </div>
+
+            <div class="jm-pres-col">
+              <p>En 2025, je monte <em>Reines du silence</em>, fruit d’une co-écriture avec Émilie Leredde, un spectacle qui aborde la question du consentement à travers l’Histoire.</p>
+              <p>Je travaille actuellement sur mon seul-en-scène <em>Ni Dieu ni maître</em>, une création intime autour de la question de l’alcoolisme.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- ======================
+          COMÉDIENNE
+    ======================= -->
+    <section class="jm-section" id="comedienne">
+      <div class="container">
+        <h2>Comédienne</h2>
+        <p class="jm-lead">Photos de book, sur scène & vidéos.</p>
+
+        <div class="jm-media jm-previews" style="margin-bottom:14px;">
+          <a class="jm-preview" href="https://juliemori.fr/book/" style="--bg:url('https://juliemori.fr/wp-content/uploads/2026/01/473257469_1133802675421632_5605096689136760317_n.jpg');">
+            <span>Photos de scène</span>
+          </a>
+
+          <a class="jm-preview" href="https://juliemori.fr/book/" style="--bg:url('https://juliemori.fr/wp-content/uploads/2026/01/PHOTO-2026-01-25-09-51-04-3.jpg');">
+            <span>Book</span>
+          </a>
+
+          <a class="jm-preview" href="https://juliemori.fr/book/" style="--bg:url('https://juliemori.fr/wp-content/uploads/2026/01/Unknown-8.jpg');">
+            <span>Vidéos</span>
+          </a>
+        </div>
+
+        <!-- ... garde le reste de tes sections ... -->
       </div>
     </section>
 
-    <footer class="jm-footer">
-      <div class="jm-wrap jm-footer__inner">
-        <p>© <span id="year"></span> Julie Mori</p>
-        <p class="jm-muted">Design & code — minimal / galerie / théâtre.</p>
+    <!-- ... MISE EN SCÈNE / PÉDAGOGIE / CONTACT / FOOTER ... -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>© <span id="year"></span> Julie Mori</div>
+          <div style="opacity:.7">Design : nuit · grain · masques</div>
+        </div>
       </div>
     </footer>
+
   </main>
 
+  <!-- IMPORTANT: lien vers ton JS -->
   <script src="app.js"></script>
 </body>
 </html>
