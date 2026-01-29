@@ -5,19 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Julie Mori — Comédienne · Metteuse en scène · Autrice</title>
   <meta name="description" content="Site officiel de Julie Mori — comédienne, metteuse en scène, autrice, pédagogue, coach."/>
-
-  <!-- IMPORTANT: lien vers ton CSS -->
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-
-  <!-- ======================
-        HEADER
-  ======================= -->
+  <!-- HEADER -->
   <header class="jm-header">
     <div class="wrap">
-      <a class="jm-brand jm-homelink" href="#top" data-hash="#top" aria-label="Julie Mori — Accueil">
+      <a class="jm-brand jm-homelink" href="#top" aria-label="Julie Mori — Accueil">
         <strong class="jm-brandname">Julie Mori</strong>
       </a>
 
@@ -38,7 +33,7 @@
     </div>
   </header>
 
-  <!-- drawer mobile -->
+  <!-- Drawer mobile -->
   <div class="jm-drawer" id="jmDrawer" aria-hidden="true">
     <div class="inner">
       <a href="#presentation">Présentation</a>
@@ -50,10 +45,7 @@
   </div>
 
   <main id="top">
-
-    <!-- ======================
-          MANIFESTO
-    ======================= -->
+    <!-- MANIFESTO -->
     <section id="jm-presentation">
       <a id="presentation"></a>
 
@@ -63,7 +55,6 @@
           <span>MORI</span>
         </div>
 
-        <!-- Masques (tu peux les garder comme ça, ou les mettre en local plus tard) -->
         <img class="jm-mask one"
              src="https://juliemori.fr/wp-content/uploads/2026/01/masque-1.png"
              alt="Masque Commedia dell’Arte 1" loading="lazy"/>
@@ -73,15 +64,15 @@
              alt="Masque Commedia dell’Arte 2" loading="lazy"/>
       </div>
 
-      <!-- ===== ACTE II : AFFICHES (slider) ===== -->
+      <!-- AFFICHES (slider horizontal) -->
       <section class="jm-posters" aria-label="Affiches de spectacles">
         <div class="jm-posters-head">
           <p class="jm-posters-title">À l'affiche</p>
-          <p class="jm-posters-hint"></p>
+          <p class="jm-posters-hint">survolez pour pause</p>
         </div>
 
         <div class="jm-rail" role="list" aria-label="Défilement automatique des affiches">
-          <div class="jm-track">
+          <div class="jm-track" id="jmTrack">
             <!-- LISTE 1 -->
             <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_1" aria-label="Affiche — Abbaye Tour Premium">
               <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.1.jpg" alt="Affiche — Abbaye Tour Premium" loading="lazy">
@@ -93,23 +84,51 @@
               <div class="jm-caption"><span>Le Naufrage</span><i class="jm-badge mint"></i></div>
             </a>
 
-            <!-- ... garde tes autres affiches ... -->
-
-            <!-- LISTE 2 DUPLICAT (pour boucle infinie) -->
-            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_1" aria-label="Affiche — Abbaye Tour Premium (bis)">
-              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.1.jpg" alt="Affiche — Abbaye Tour Premium" loading="lazy">
-              <div class="jm-caption"><span>Abbaye Tour Premium</span><i class="jm-badge"></i></div>
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_3" aria-label="Affiche — Femmes Pirates">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-1.jpg" alt="Affiche — Femmes Pirates" loading="lazy">
+              <div class="jm-caption"><span>Femmes Pirates</span><i class="jm-badge lav"></i></div>
             </a>
 
-            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_2" aria-label="Affiche — Le Naufrage (bis)">
-              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-0.jpg" alt="Affiche — Le Naufrage" loading="lazy">
-              <div class="jm-caption"><span>Le Naufrage</span><i class="jm-badge mint"></i></div>
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_4" aria-label="Affiche — Maures à Venise">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-2.jpg" alt="Affiche — Maures à Venise" loading="lazy">
+              <div class="jm-caption"><span>Maures à Venise</span><i class="jm-badge"></i></div>
             </a>
+
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_5" aria-label="Affiche — Une demande en mariage">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-3.jpg" alt="Affiche — Une demande en mariage" loading="lazy">
+              <div class="jm-caption"><span>Une demande en mariage</span><i class="jm-badge mint"></i></div>
+            </a>
+
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_6" aria-label="Affiche — Huit Presque Clos">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-4.jpg" alt="Affiche — Huit Presque Clos" loading="lazy">
+              <div class="jm-caption"><span>Huit Presque Clos</span><i class="jm-badge mint"></i></div>
+            </a>
+
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_7" aria-label="Affiche — Les femmes savantes">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-5.jpg" alt="Affiche — Les femmes savantes" loading="lazy">
+              <div class="jm-caption"><span>Les femmes savantes</span><i class="jm-badge mint"></i></div>
+            </a>
+
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_8" aria-label="Affiche — Savantes">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-6.jpg" alt="Affiche — Savantes" loading="lazy">
+              <div class="jm-caption"><span>Savantes</span><i class="jm-badge mint"></i></div>
+            </a>
+
+            <a class="jm-poster" role="listitem" href="URL_BILLETTERIE_9" aria-label="Affiche — Le Schmurtz">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-7.jpg" alt="Affiche — Le Schmurtz" loading="lazy">
+              <div class="jm-caption"><span>Le Schmurtz</span><i class="jm-badge mint"></i></div>
+            </a>
+
+            <a class="jm-poster" role="listitem" href="https://www.billetreduc.com/spectacle/treteaux-nomades-othello-75107/avis" aria-label="Affiche — Trétaux Nomades">
+              <img src="https://juliemori.fr/wp-content/uploads/2026/01/affiche-9.jpeg" alt="Affiche — Trétaux Nomades" loading="lazy">
+              <div class="jm-caption"><span>Trétaux Nomades</span><i class="jm-badge mint"></i></div>
+            </a>
+            <!-- la duplication est faite automatiquement par app.js -->
           </div>
         </div>
       </section>
 
-      <!-- ===== ACTE III : PRÉSENTATION ===== -->
+      <!-- PRÉSENTATION -->
       <section class="jm-pres" aria-label="Présentation">
         <div class="jm-pres-head">
           <div class="jm-act">PRÉSENTATION</div>
@@ -127,21 +146,22 @@
             <div class="jm-pres-col">
               <p>Formée au Conservatoire d’art dramatique de Cannes, puis diplômée de l’Académie Internationale des Arts du Spectacle de Montreuil en 2011, mon parcours débute sur scène dans plusieurs comédies mises en scène par Carlo Boso.</p>
               <p>Ma formation se poursuit à l’AICOM, où la rencontre avec Sofia Morgavi, qui devient ma coach vocale, m’ouvre la voie aux spectacles musicaux.</p>
+              <p>En 2013, je découvre l’univers de l’improvisation théâtrale et me produis sur scène avec mes partenaires au Théâtre du Gymnase et à l’Apollo Théâtre.</p>
+              <p>En 2019, j’intègre le dispositif Apprentiscène en tant qu’autrice et metteuse en scène.</p>
             </div>
 
             <div class="jm-pres-col">
-              <p>En 2025, je monte <em>Reines du silence</em>, fruit d’une co-écriture avec Émilie Leredde, un spectacle qui aborde la question du consentement à travers l’Histoire.</p>
+              <p>Parallèlement, je mets en scène plusieurs visites théâtralisées au Havre avec la compagnie Madame Phénomène, dans une démarche de réhabilitation du matrimoine français.</p>
+              <p>En 2025, je monte <em>Reines du silence</em>, fruit d’une co-écriture avec Émilie Leredde.</p>
+              <p>La même année, j’adapte et signe la mise en scène du <em>Naufrage</em> d’Elena Virginia Baletti Riccoboni, présenté au festival du Mois Molière à Versailles.</p>
               <p>Je travaille actuellement sur mon seul-en-scène <em>Ni Dieu ni maître</em>, une création intime autour de la question de l’alcoolisme.</p>
             </div>
           </div>
         </div>
       </section>
-
     </section>
 
-    <!-- ======================
-          COMÉDIENNE
-    ======================= -->
+    <!-- COMÉDIENNE -->
     <section class="jm-section" id="comedienne">
       <div class="container">
         <h2>Comédienne</h2>
@@ -161,11 +181,292 @@
           </a>
         </div>
 
-        <!-- ... garde le reste de tes sections ... -->
+        <div class="jm-grid">
+          <div class="jm-card">
+            <div class="inner">
+              <div class="kicker">Parcours</div>
+              <p style="margin:0; color:var(--muted); line-height:1.6; font-size:16px;">
+                Formée au Conservatoire de Cannes puis diplômée de l’Académie Internationale des Arts du Spectacle,
+                mon parcours mêle comédie, théâtre musical et improvisation. Autrice et metteuse en scène, je développe
+                des créations engagées autour du matrimoine et de thématiques sociétales fortes.
+              </p>
+              <div class="jm-meta" style="margin-top:16px;">
+                <span class="jm-tag">Théâtre</span>
+                <span class="jm-tag">Court métrage</span>
+                <span class="jm-tag">Book</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.billetreduc.com/spectacle-julie-mori.htm" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+            <div class="jm-card jm-billet">
+              <img
+                src="https://juliemori.fr/wp-content/uploads/2026/01/454207328_854477676776156_4582983125622815562_n.jpg"
+                alt="Billetreduc" class="jm-billet__bg" />
+              <div class="inner">
+                <div class="kicker jm-billet__k">Billetterie</div>
+                <p class="jm-billet__p">
+                  Retrouvez les spectacles, dates et réservations sur le profil Billetreduc.
+                </p>
+                <div class="jm-billet__cta">Voir sur Billetreduc →</div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ... MISE EN SCÈNE / PÉDAGOGIE / CONTACT / FOOTER ... -->
+    <!-- MISE EN SCÈNE -->
+    <section class="jm-section jm-mesfluid" id="mes">
+      <div class="container">
+        <h2>Mise en scène</h2>
+        <p class="jm-lead">Une sélection de projets mis en scène par Julie Mori.</p>
+
+        <div class="mesfluid">
+
+          <!-- 1) NAUFRAGE -->
+          <article class="mesrow mesrow--balanced">
+            <div class="mesgrid">
+              <div class="mescontent">
+                <div class="kicker">Création</div>
+                <h3 class="mestitle">Le Naufrage</h3>
+
+                <div class="mescopy">
+                  <p>La Compagnie Prisma Teatro remet aujourd’hui en lumière <em>Le Naufrage</em>, œuvre rare et audacieuse d’Elena Baletti Riccoboni.</p>
+                  <p>Inscrite dans la tradition de la Commedia dell’arte, la pièce interroge l’identité, la domination patriarcale et la place des femmes.</p>
+                  <p>La mise en scène revendique un théâtre vivant et organique : masques, jeu codifié, improvisations et musique en direct.</p>
+                </div>
+
+                <div class="mesmeta">
+                  <a class="meslink" href="/le-naufrage">Ouvrir la page ↗</a>
+                </div>
+              </div>
+
+              <div class="mesvisual">
+                <a class="mesfloat" href="/le-naufrage" aria-label="Ouvrir la page Le Naufrage">
+                  <img src="https://juliemori.fr/wp-content/uploads/2026/01/ChatGPT-Image-27-janv.-2026-a-12_01_59.png" alt="Le Naufrage — coquillage">
+                  <span class="mesfloat-hint">Cliquer</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="mesrule" aria-hidden="true"></div>
+
+          <!-- 2) NI DIEU NI MAÎTRE -->
+          <article class="mesrow mesrow--float">
+            <div class="mescontent">
+              <div class="kicker">Création</div>
+              <h3 class="mestitle">Ni Dieu Ni Maître</h3>
+
+              <div class="mescopy">
+                <p>Une fille tente de comprendre la descente aux enfers de son père, prisonnier de l’alcool. Pour saisir ce qui l’a conduit à l’isolement, elle se travestit et rejoue des moments clés de sa vie.</p>
+                <p>Le spectacle navigue entre comédie et témoignage intime, porté par une recherche musicale qui accompagne les états de conscience altérés.</p>
+              </div>
+
+              <div class="mesmeta">
+                <a class="meslink" href="/ni-dieu-ni-maitre">Ouvrir la page ↗</a>
+              </div>
+            </div>
+
+            <div class="mesrow-right">
+              <a class="mesfloat mesfloat--alt" href="/ni-dieu-ni-maitre" aria-label="Ouvrir la page Ni Dieu Ni Maître">
+                <img src="https://juliemori.fr/wp-content/uploads/2026/01/ChatGPT-Image-27-janv.-2026-a-12_05_06.png" alt="Ni Dieu Ni Maître — visuel">
+                <span class="mesfloat-hint">Cliquer</span>
+              </a>
+            </div>
+          </article>
+
+          <div class="mesrule" aria-hidden="true"></div>
+
+          <!-- 3) REINES DU SILENCE -->
+          <article class="mesrow mesrow--photo">
+            <div class="mesrow-left">
+              <div class="kicker">Création</div>
+              <h3 class="mestitle">Reines du silence</h3>
+
+              <div class="mescopy">
+                <p>Co-écriture avec Émilie Leredde. Un spectacle qui aborde la question du consentement à travers l’Histoire.</p>
+              </div>
+
+              <div class="mesmeta">
+                <a class="mespdf" href="URL_PDF_REINES" target="_blank" rel="noopener">Télécharger le dossier de presse (PDF)</a>
+              </div>
+            </div>
+
+            <div class="mesrow-right">
+              <a class="mesfloat mesfloat--alt" href="/reines-du-silence" aria-label="Ouvrir la page Reines du silence">
+                <img src="https://juliemori.fr/wp-content/uploads/2026/01/ChatGPT-Image-29-janv.-2026-a-15_13_56.png" alt="Reines du silence — visuel">
+                <span class="mesfloat-hint">Cliquer</span>
+              </a>
+            </div>
+          </article>
+
+          <div class="mesrule" aria-hidden="true"></div>
+
+          <!-- 4) ABBAYE -->
+          <article class="mesrow mesrow--photo">
+            <div class="mesrow-left">
+              <div class="kicker">Création in situ</div>
+              <h3 class="mestitle">Abbaye de Graville</h3>
+
+              <div class="mescopy">
+                <p>Visites théâtralisées : faire vivre un lieu par le récit, l’écoute, et le jeu.</p>
+              </div>
+
+              <div class="mesmeta">
+                <a class="mespdf" href="URL_PDF_GRAVILLE" target="_blank" rel="noopener">Télécharger le dossier de presse (PDF)</a>
+              </div>
+            </div>
+
+            <div class="mesrow-right">
+              <a class="mesfloat mesfloat--alt" href="/abbaye-de-graville" aria-label="Ouvrir la page Abbaye de Graville">
+                <img src="https://juliemori.fr/wp-content/uploads/2026/01/ChatGPT-Image-29-janv.-2026-a-15_30_57.png" alt="Abbaye de Graville — visuel">
+                <span class="mesfloat-hint">Cliquer</span>
+              </a>
+            </div>
+          </article>
+
+          <div class="mesrule" aria-hidden="true"></div>
+
+          <!-- 5) APPRENTISCÈNE -->
+          <article class="mesrow mesrow--video">
+            <div class="mesrow-left">
+              <div class="kicker">Apprentiscène</div>
+              <h3 class="mestitle">Écriture & mise en scène</h3>
+
+              <div class="mescopy">
+                <p>Apprentiscène est un dispositif artistique et pédagogique qui permet à des jeunes en formation professionnelle de monter sur scène, accompagnés par des artistes du spectacle vivant.</p>
+                <p>Dans ce cadre, <strong>Julie Mori</strong> accompagne plusieurs groupes : écriture, jeu, dramaturgie et mise en espace.</p>
+                <p><strong>🏆 En 2025, le spectacle mis en scène par Julie Mori reçoit le Premier prix du Jury</strong> pour l’écriture et la mise en scène.</p>
+              </div>
+            </div>
+
+            <div class="mesrow-right">
+              <div class="mesvideo" style="display:grid; gap:16px;">
+                <iframe
+                  src="https://www.youtube.com/embed/GzvjCKT8ty8"
+                  title="Apprentiscène — représentation"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                  style="width:100%; aspect-ratio:16/9; border-radius:14px;">
+                </iframe>
+
+                <iframe
+                  src="https://www.youtube.com/embed/xFKR8esfVew?start=12091"
+                  title="Apprentiscène — remise du Premier prix du Jury"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                  style="width:100%; aspect-ratio:16/9; border-radius:14px;">
+                </iframe>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION & COACHING -->
+    <section class="jm-section" id="pedagogie">
+      <div class="container">
+        <div class="kicker">Transmission</div>
+        <h2>Formation & coaching</h2>
+        <p class="jm-lead">Transmission, corps, écoute. Un cadre exigeant — et un espace de jeu.</p>
+
+        <div class="jm-grid">
+          <div class="jm-card">
+            <div class="inner">
+              <div class="kicker">Ateliers</div>
+              <div class="jm-list">
+                <div class="jm-item">
+                  <div class="date">FORMAT</div>
+                  <h3>Atelier jeu / présence</h3>
+                  <p>Durée, public, modalités (sur demande / calendrier).</p>
+                </div>
+                <div class="jm-item">
+                  <div class="date">FORMAT</div>
+                  <h3>Coaching entreprise</h3>
+                  <p>Prise de parole, posture, narration, interaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="jm-card">
+            <div class="inner">
+              <div class="kicker">Approche</div>
+              <p style="margin:0; color:var(--muted); line-height:1.6; font-size:16px;">
+                Une pédagogie ancrée dans le corps et l’écoute : technique, liberté, précision — au service d’une présence.
+              </p>
+              <div style="height:18px"></div>
+              <p style="margin:0; font-size:22px; line-height:1.25; opacity:.92;">
+                « La technique n’est pas une cage.<br/>C’est un tremplin. »
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="jm-section" id="contact">
+      <div class="container">
+        <div class="kicker">Rideau</div>
+        <h2>Contact</h2>
+        <p class="jm-lead">Pour une proposition, un casting, un atelier, une collaboration — écris simplement.</p>
+
+        <div class="jm-grid">
+          <div class="jm-card">
+            <div class="inner">
+              <div class="kicker">Email</div>
+              <p style="margin:0 0 14px 0; color:var(--muted); line-height:1.6; font-size:16px;">
+                Écrivez-moi :
+              </p>
+              <a class="jm-pill" href="mailto:contact@juliemori.fr" style="display:inline-block;">
+                <em>contact@juliemori.fr</em>
+              </a>
+
+              <div style="height:18px"></div>
+
+              <div class="kicker">Réseaux</div>
+              <div class="jm-meta">
+                <a class="jm-tag" href="URL_INSTAGRAM">Instagram</a>
+                <a class="jm-tag" href="URL_YOUTUBE">YouTube</a>
+                <a class="jm-tag" href="https://www.billetreduc.com/spectacle-julie-mori.htm">Billetreduc</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="jm-card">
+            <div class="inner">
+              <div class="kicker">Matériel</div>
+              <div class="jm-list">
+                <div class="jm-item">
+                  <div class="date">PDF</div>
+                  <h3>CV artistique</h3>
+                  <p>Lien vers le PDF.</p>
+                </div>
+                <div class="jm-item">
+                  <div class="date">PDF</div>
+                  <h3>Press kit</h3>
+                  <p>Dossier presse / sélection.</p>
+                </div>
+                <div class="jm-item">
+                  <div class="date">VIDÉO</div>
+                  <h3>Bande démo</h3>
+                  <p>Lien direct.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="container">
@@ -175,11 +476,8 @@
         </div>
       </div>
     </footer>
-
   </main>
 
-  <!-- IMPORTANT: lien vers ton JS -->
   <script src="app.js"></script>
 </body>
 </html>
-
