@@ -1,7 +1,26 @@
-// Année automatique dans le footer
-document.getElementById("year").textContent = new Date().getFullYear();
+// Drawer mobile
+const burger = document.getElementById('jmBurger');
+const drawer = document.getElementById('jmDrawer');
 
-// Smooth scroll (Safari friendly)
+function setDrawer(open){
+  drawer.style.display = open ? 'block' : 'none';
+  drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+burger?.addEventListener('click', () => {
+  const isOpen = burger.getAttribute('aria-expanded') === 'true';
+  setDrawer(!isOpen);
+});
+
+// Close drawer on link click
+drawer?.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click', ()=> setDrawer(false));
+});
+
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
+
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener("click", (e)=>{
     const id = a.getAttribute("href");
